@@ -36,6 +36,6 @@ const styles = StyleSheet.create({
     medium: {
         marginTop: 32,
         fontSize: 15,
-        color: 'black',
+        color: 'white',
     }
 }); 
