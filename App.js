@@ -22,7 +22,7 @@ const App = () => {
 // define your styles
 const styles = StyleSheet.create({
   container: {
-    flex: 1, 
+    flex: 1,
   },
 });
 //make this component available to the app
