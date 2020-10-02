@@ -2,12 +2,16 @@ import React from 'react';
 import { Text,View,ImageBackground,StyleSheet,FlatList} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 const availableZipItems = [
-    { place: 'JOB', },
+    { place: 'JOB'}, 
     { place: 'PAO' },
+    { place: 'OAT'},
+    { place: 'TANG'},
+    { place: 'LAN'},
 ]
-const ZipItem = ({ place, }) => (
+const ZipItem = ({ place, code, navigation }) => (
         <View >
             <Text style={styles.medium}>{place}</Text>
+            <Text style={styles.medium}>{code}</Text>
         </View>
 )
 const _keyExtractor = item => item.code
