@@ -2,11 +2,11 @@ import React from 'react';
 import { Text,View,ImageBackground,StyleSheet,FlatList} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 const availableZipItems = [
-    { place: 'JOB'}, 
-    { place: 'PAO' },
-    { place: 'OAT'},
-    { place: 'TANG'},
-    { place: 'LAN'},
+    { place: 'JOB', code: '0874568326'}, 
+    { place: 'PAO' , code: '0946853256'},
+    { place: 'OAT', code: '0935841669'},
+    { place: 'TANG', code: '0895476259'},
+    { place: 'LAN', code: '0884571123'},
 ]
 const ZipItem = ({ place, code, navigation }) => (
         <View >
@@ -19,7 +19,7 @@ export default function newpage({route}) {
     const navigation = useNavigation() 
     return (
         <View>
-            <ImageBackground source ={require('./jo3o3l.jpg')} style={styles.backdrop}>
+            <ImageBackground source ={require('./free-abstract-background-vector.jpg')} style={styles.backdrop}>
             <FlatList
                           data={availableZipItems}
                            keyExtractor={_keyExtractor}
