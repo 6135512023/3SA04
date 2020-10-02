@@ -2,11 +2,11 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Weather from './components/Weather'
+import WeatherScreen from './components/WeatherScreen'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import ZipCodeScreen from './components/ZipCodeScreen';
-import WeatherScreen from './components/WeatherScreen';
-
+import newpage from './components/newpage';
 const Stack = createStackNavigator();
 // create a component
 const App = () => {
@@ -15,14 +15,15 @@ const App = () => {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={ZipCodeScreen} />
         <Stack.Screen name="Weather" component={WeatherScreen} />
+        <Stack.Screen name="newpage" component={newpage} />
       </Stack.Navigator> 
-    </NavigationContainer>            
+    </NavigationContainer>       
   );
 };
 // define your styles
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 1, 
   },
 });
 //make this component available to the app

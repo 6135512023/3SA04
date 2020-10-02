@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-
 export default function Forecast(props) {
     return (
         <View style={styles.center}>
@@ -15,7 +14,6 @@ export default function Forecast(props) {
         </View>
     );
 }
-
 const styles = StyleSheet.create({
     center: {        
         justifyContent: 'space-around',
@@ -31,4 +29,4 @@ const styles = StyleSheet.create({
         fontSize: 15,
         color: 'white',
     }
-}) 
+})

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, ImageBackground, StyleSheet } from 'react-native';
 import Forecast from './Forecast';
-
 export default function Weather(props) {
     const [forecastInfo, setForecastInfo] = useState({
         main: 'main',
@@ -22,7 +21,6 @@ export default function Weather(props) {
 const styles = StyleSheet.create({
     backdrop: {
         alignItems: 'center',
-
         width: '100%',
         height: '100%'
     },
@@ -36,6 +34,7 @@ const styles = StyleSheet.create({
     medium: {
         marginTop: 32,
         fontSize: 15,
+        color: 'black',
         color: 'white',
     }
-}); 
+});  
